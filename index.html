@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photography</title>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         margin: 0;
       }
@@ -77,13 +80,16 @@
         .family {
           width: 500px;
           height: auto;
+          border-radius: 15px;
         }
       }
       #photos img {
         width: 700px;
-        height: 500px;
+        height: auto;
         text-align: center;
+        border-radius: 15px;
       }
+
       #header h2 {
         text-align: center;
         padding-top: 0;
@@ -94,6 +100,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        height: auto;
       }
 
       @media (min-width: 700px) {
@@ -111,7 +118,7 @@
             <h1>My World</h1>
             <h2>Family Photos</h2>
             <button class="btn">
-              <a href="photos" id="View-Photos">View Photos</a>
+              <a href="#photos" id="View-Photos">View Now</a>
             </button>
           </div>
         </div>
@@ -123,13 +130,12 @@
 
       <div id="photos">
         <div id="header">
-          <h2>My Album</h2>
+          <h2>My World</h2>
         </div>
 
         <img src="./assets/krishna.jpg" alt="krishna photo" class="center" />
         <div class="caption">
-          <h3>Photo One</h3>
-          <p>The beautiful memories of krishna.</p>
+          <h3>The beautiful memories of krishna.</h3>
         </div>
 
         <img
@@ -138,25 +144,21 @@
           class="center"
         />
         <div class="caption">
-          <h3>Photo Two</h3>
-          <p>Krishna as a krishna in the occasion of krishnastami.</p>
+          <h3>Krishna as Krishna</h3>
         </div>
 
         <img src="./assets/fathersday.jpg" alt="krishna photo" class="center" />
         <div class="caption">
-          <h3>Photo Three</h3>
-          <p>fathers day related photo</p>
+          <h3>Father's day with their father</h3>
         </div>
 
         <img src="./assets/kids.jpg" alt="krishna photo" class="center" />
         <div class="caption">
-          <h3>Photo Four</h3>
-          <p>Two elder sisters and younger brothers</p>
+          <h3>Brothers and sisters</h3>
         </div>
         <img src="./assets/trip.jpg" alt="krishna photo" class="center" />
         <div class="caption">
-          <h3>Photo Five</h3>
-          <p>Wonderla trip</p>
+          <h3>Family outing</h3>
         </div>
       </div>
     </main>
